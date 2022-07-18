@@ -22,6 +22,11 @@ Banky is a simple dynamic website which has the following specs.
 - Express.js 
 - MongoDB
 
+## ✨ Heroku 
+
+Banky is hosted on Heroku >> 
+https://banky-v1.herokuapp.com/home
+
 
 ## ✨ Installation
 
@@ -36,8 +41,4 @@ npm run watch
 ```
 
 
-## ✨ Heroku 
-
-Banky is hosted on Heroku >> 
-https://banky-v1.herokuapp.com/home
 
