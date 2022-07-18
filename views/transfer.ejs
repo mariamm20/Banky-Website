@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('partials/head.ejs') %>
+
+    <body>
+
+        <%- include('partials/header.ejs') %>
+        <div class="alert alert-success" style="display:none" role="alert" id="successAlert">
+            <p style="text-align: center;"><i class="bi bi-patch-check-fill"></i>
+                Money Transfer Successfully   </p>
+        </div>
+
+            <section class="form-section">
+                <div class="form-div" data-aos="zoom-in-up" >
+                    <h2>Transfer Money</h2>
+                    <span class="solgan">Easy, Fast and Secure</span>
+                    <form method="post" action="/customers">
+                        <div class="alert alert-danger" style="display:none" role="alert" id="loginAlert">
+                            <p style="text-align: center;"><i class="bi bi-bug-fill"></i> You can't transfer money for the same customer  </p>
+                        </div>
+
+                        <label for="select1" class="form-label">From</label>
+                        <select class="form-select" name="from" id="select1" aria-label="Default select example"
+                            required>
+                            <option value="">Select Customer</option>
+                            <% customers.forEach(item=> { %>
+                                <option value="<%= item.id%>" id="<%= item.balance %> "><%= item.name %></option>
+
+                                <% }); %>
+                        </select>
+                        <input type="text" class="d-none" value="" id="cust1" name="cust1" />
+                        <input type="text" class="d-none" value="" id="date" name="date" />
+                        <input type="text" class="d-none" value="" id="time" name="time" />
+                        <div class="current-div">
+                            <p> Current Balance</p>
+                            <span id="balance1"> 0 <i class="bi bi-coin"></i> </span>
+                        </div>
+
+                        <label for="select2" class="form-label">To</label>
+                        <select class="form-select" name="to" id="select2" aria-label="Default select example" required
+                            disabled>
+                            <option value="">Select Customer</option>
+                            <% customers.forEach(item=> { %>
+                                <option value="<%= item.id%>" id="<%= item.balance %>"><%= item.name %></option>
+                                <% }); %>
+                        </select>
+                        <input type="text" class="d-none" value="" id="cust2" name="cust2" />
+                        <div class="current-div">
+                            <p>Current Balance</p>
+                            <span id="balance2"> 0 <i class="bi bi-coin"></i></span>
+                        </div>
+                        
+
+                        <div class="mb-3 field">
+                            <label for="Input1" class="form-label">Amount to transfer</label>
+                            <input type="number" name="amount" class="form-control" id="Input1" placeholder="100 $"
+                                required>
+                        </div>
+                        <div class="alert alert-danger" role="alert" style="display:none" id="amountAlert">
+                            <p style="text-align: center;"><i class="bi bi-bug-fill"></i>
+                                Invalid amount</p>
+                        </div>
+
+                        <button>Transfer</button>
+                    </form>
+                </div>
+            </section>
+
+            <%- include('partials/footer.ejs') %>
+                
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+                    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+                <script src="/bootstrap/dist/js/bootstrap.bundle.js"></script>
+                <script src="js/main.js"></script>
+    </body>
+
+</html>

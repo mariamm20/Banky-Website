@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('partials/head.ejs') %>
+
+  <body>
+
+    <%- include('partials/header.ejs') %>
+
+      <section class="profile-section">
+        <div class="profile-div">
+          <div class="img-div" data-aos="flip-left">
+            <img src="<%= customerObject.image %>" alt="">
+          </div>
+          <h2><%= customerObject.name%></h2>
+          <p><%= customerObject.email %></p>
+          <div class="current-div">
+            <h4>
+              <i class="bi bi-coin"></i>  Current Balance
+            </h4>
+            <p><%= customerObject.balance %> $</p>
+          </div>
+          <button onclick="location.href='/transfer'" class="transfer-btn">
+            Transfer
+          </button>
+
+        </div>
+      </section>
+
+
+
+      <%- include('partials/footer.ejs') %>
+
+        
+  </body>
+
+</html>

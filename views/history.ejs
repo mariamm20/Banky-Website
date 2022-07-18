@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('partials/head.ejs') %>
+
+    <body>
+
+        <%- include('partials/header.ejs') %>
+
+
+
+            <section class="table-section">
+                <div class="heading" data-aos="zoom-in-up">
+                    <h2 >
+                        Transfer History
+                    </h2>
+                    <button class="mybtn" onclick="sort()" title="Toggle Newer or Recent"><i class="bi bi-sort-up"></i> Sort <span></span></button>
+                    
+                </div>
+                <div>
+
+                    <table class="table table-bordered table-responsive">
+                        <thead>
+                            <tr>
+                                <th scope="col">From Customer </th>
+                                <th scope="col">To Customer</th>
+                                <th scope="col" class="text-center">Amount Transfered</th>
+                                <th scope="col" class="text-center">Date of Transfer</th>
+                                <th scope="col" class="text-center">Time of Transfer</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% history.forEach(item=> { %>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="/customers/<%= item.from%>">
+                                            <%= item.cust1 %>
+                                        </a>
+                                    </th>
+                                    <td>
+                                        <a href="/customers/<%= item.to%>">
+                                            <%= item.cust2 %><a />
+                                    </td>
+                                    <td class="text-center">
+                                        <%= item.amount%> $
+                                    </td>
+                                    <td class="text-center">
+                                        <%= item.date%> 
+                                    </td>
+                                    <td class="text-center">
+                                        <%= item.time%> 
+                                    </td>
+                                </tr>
+                                <% }); %>
+                        </tbody>
+                    </table>
+
+                </div>
+            </section>
+
+            </div>
+
+            <%- include('partials/footer.ejs') %>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+                    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+                
+                <script src="js/main.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<%- include('partials/head.ejs') %>
+
+  <body>
+    
+    <%- include('partials/header.ejs') %>
+
+    <section class="text-section">
+        <div data-aos="fade-up">
+            <h2>
+            OUR CUSTOMERS
+            </h2>
+        </div>
+    </section>
+
+    <section class="table-section">
+        <div>
+        <table class="table table-bordered table-responsive">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col" class="text-center">Current Balance</th>
+                <th scope="col" class="text-center">Transfer Money</th>
+              </tr>
+            </thead>
+            <tbody>
+                <% customers.forEach(item => { %>
+              <tr>
+                <th scope="row"><a href="/customers/<%= item.id%>"> <%= item.name %> </a> </th>
+                <td> <%= item.email %> </td>
+                <td class="text-center"> <%= item.balance %> $</td>
+                <td class="text-center"><button onclick="location.href='./transfer'">Transfer</button></td>
+              </tr>
+           <% }); %>
+            </tbody>
+          </table>
+        </div>
+    </section>
+
+    <%- include('partials/footer.ejs') %>
+
+
+  </body>
+</html>

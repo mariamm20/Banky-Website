@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<%- include('partials/head.ejs') %>
+
+  <body>
+    
+    <%- include('partials/header.ejs') %>
+
+    <section class="landing-section">
+      <div class="left-div"data-aos="zoom-in-up">
+        <div>
+          <h2>
+            <span>Transfer Money </span> <br />
+            Easy Fast Secure
+          </h2>
+          <p>
+            Banky helps you to transfer money <br />
+            simple & easy with just a few clicks. <br />
+            It is fast and secure, Give it a try!
+          </p>
+          <button onclick="location.href='./transfer'">Try Now</button>
+        </div>
+      </div>
+      <div class="right-div" data-aos="zoom-in-up">
+        <img src="img/landingImg.png" alt="landing page image" />
+      </div>
+    </section>
+
+    <section class="customers-section">
+      <div data-aos="fade-down">
+        <h2>Our Customers</h2>
+        <p>
+          You can see all our customers to <br />
+          know every customer account<br />
+          balance and more data
+        </p>
+        <button onclick="location.href='./customers'">View Customers</button>
+      </div>
+    </section>
+
+    <section class="landing-section transfer-section">
+      <div class="left-div" data-aos="zoom-in-up">
+        <div>
+          <h2>Transfer Money</h2>
+          <p>
+            You can transfer money <br />
+            from customer to another <br />
+            with a few clicks.
+          </p>
+          <button onclick="location.href='./transfer'">Transfer Now</button>
+        </div>
+      </div>
+      <div class="right-div" data-aos="zoom-in-up">
+        <img
+          src="img/transferMoney.jpg"
+          class="transfer-img"
+          alt="landing page image"
+        />
+      </div>
+    </section>
+
+    <%- include('partials/footer.ejs') %>
+
+    
+  </body>
+</html>
