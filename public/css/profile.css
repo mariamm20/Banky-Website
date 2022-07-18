@@ -1,0 +1,69 @@
+
+.profile-section img{
+    width: 175px;
+    border: 5px solid #cccccc26;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.profile-div{
+    box-shadow: 1px 1px 5px #ccc;
+    padding: 50px 80px;
+    margin: 50px 0;
+    border-radius: 20px;
+    color:#263558 ;
+    width: 550.25px;
+}
+.profile-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.current-div{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+.bi-coin{
+    color: #FFB93F;
+}
+.transfer-btn{
+    border-radius: 20px;
+    background-color: #FFB93F;
+    color: #fff;
+    border: 1px solid #FFB93F;
+    padding: 0px 10px;
+    width: 100%;
+    font-size: 22px;
+}
+.transfer-btn:hover{
+    color: #FFB93F;
+    background-color: #fff;
+    border: 1px solid #FFB93F;
+}
+.current-div p{
+    font-weight: bold;
+}
+.profile-div h2{
+    font-size: 26px;
+}
+.profile-div h4{
+    font-size: 18px;
+}
+
+/*Responsive*/
+@media (max-width:580px) {
+    .profile-div{
+        box-shadow: 1px 1px 5px #ccc;
+        padding: 50px 30px;
+        margin: 50px 0;
+        border-radius: 20px;
+        color: #263558;
+        width: 90%;
+    }
+}
+@media (max-width:375px) {
+    .current-div h4{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,129 @@
+/*navbar style */
+header{
+    background-color: #ffff;
+    box-shadow: 0 1px 5px #ccc;
+}
+.collapse{
+    position: absolute;
+    right: 25px;
+}
+.logo{
+    width: 144.76px;
+    
+}
+.nav-link{
+    color: #263558;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+.nav-item a:hover{
+    color: #FFB93F !important;
+}
+.transferBtn a{
+    
+    color: #1EAAF1 !important;
+    
+}
+.transferBtn a:hover{
+    
+    color: #1EAAF1 !important;
+    opacity: 0.5;
+}
+.nav-item{
+    margin-right: 10px;
+}
+.current{
+    color: #FFB93F;
+}
+.trans{
+    color: #fff !important;
+    background-color: #1EAAF1;
+    border-radius: 5px;
+}
+
+/*Footer style*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #EBF2FA;
+    padding: 20px 0;
+    font-size: 18px;
+    color: #263558;
+}
+footer img{
+    width: 114.76px;
+    
+}
+footer p{
+    padding: 10px 0 ;
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+}
+footer .name{
+    opacity: 0.8;
+}
+footer p span{
+    padding: 10px;
+    opacity: 1;
+    padding-top: 5px;
+}
+footer p span a{
+    color: #263558;
+    text-decoration: none;
+    
+}
+footer p span:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/*Responsive*/
+@media (max-width:992px) {
+    .collapse{
+        position: relative;
+        right: 0;
+    }
+    .nav-item{
+        padding: 15px;
+        border-bottom: 1px solid #ccc;
+    }
+    .nav-item:last-child{
+        border-bottom: none;
+    }
+    .nav-item:hover{
+        box-shadow: 0px 1px 3px #ccc;
+    }
+    .bi-menu-button-wide{
+        font-size: 28px;
+    color: #263558;
+    
+    position: relative;
+    
+    top: 1px;
+    outline: none;
+    box-shadow: none;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+}
+
+}
+@media (max-width:580px) {
+    footer p{
+        width: 100%;
+        text-align: center;
+    }
+    footer{
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+}
+
+
+
+
