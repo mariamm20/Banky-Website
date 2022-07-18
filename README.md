@@ -38,6 +38,6 @@ npm run watch
 
 ## Heroku 
 
-Banky is hosted on Heroku. 
+Banky is hosted on Heroku >> 
 https://banky-v1.herokuapp.com/home
 
