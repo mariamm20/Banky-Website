@@ -1,5 +1,5 @@
 # Banky Website
-## Basic Bank System For TSF GRIP
+## Basic Bank System For The Spark Foundation GRIP 
 ##### Develop By Mariam Mohamed Ibrahim 
 
 Banky is a simple dynamic website which has the following specs.
