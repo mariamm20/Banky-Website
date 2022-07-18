@@ -8,7 +8,7 @@ Banky is a simple dynamic website which has the following specs.
 - Transfer money between customers
 - Show transfer history 
 
-## ✨Technologies
+## ✨ Technologies
 ### Front-End
 
 - HTML 
@@ -23,7 +23,7 @@ Banky is a simple dynamic website which has the following specs.
 - MongoDB
 
 
-## Installation
+## ✨ Installation
 
 Banky requires [Node.js](https://nodejs.org/) v10+ to run.
 
@@ -36,7 +36,7 @@ npm run watch
 ```
 
 
-## Heroku 
+## ✨ Heroku 
 
 Banky is hosted on Heroku >> 
 https://banky-v1.herokuapp.com/home
