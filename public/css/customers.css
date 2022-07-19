@@ -60,7 +60,18 @@ table tr:hover th:first-child{
 table a:hover{
     color: #263558;
 }
-
+.alert-success p{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.alert{
+    position: relative;
+    padding: 1rem 0rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
 /*Responsive*/
 @media (max-width:768px) {
     .table-section div{

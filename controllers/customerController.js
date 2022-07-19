@@ -65,7 +65,7 @@ const customer_post = (req, res) => {
                                     Customers.updateOne({ _id: history.from }, { balance: down }, (err, doc) => {
                                         if (err) { console.log(err) }
                                         else {
-                                            res.redirect('/transfer?state=' +  encodeURIComponent('Successfully_Transfered') )
+                                            res.redirect('/customers?state=' +  encodeURIComponent('Successfully_Transfered') )
                                         }
                                     })
                                 })

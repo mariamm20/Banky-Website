@@ -45,8 +45,8 @@ $(document).ready(function () {
         myParam = '/transfer';
     }
     if (myParam2 == "Successfully_Transfered") {
-        $('#successAlert').show();
-        myParam = '/transfer';
+        $('#successAlert').show().delay(5000).fadeOut();;
+        myParam = '/customers';
     }
 
 

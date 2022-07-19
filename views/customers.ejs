@@ -6,6 +6,10 @@
   <body>
     
     <%- include('partials/header.ejs') %>
+    <div class="alert alert-success fade show" style="display:none" role="alert" id="successAlert">
+      <p style="text-align: center;"><i class="bi bi-patch-check-fill"></i>
+          Money Transfer Successfully   </p>
+  </div>
 
     <section class="text-section">
         <div data-aos="fade-up">
@@ -41,7 +45,9 @@
     </section>
 
     <%- include('partials/footer.ejs') %>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 
   </body>
 </html>
